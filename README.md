@@ -6,8 +6,7 @@
 3. Components, aka services: Components are the key ingredients in Microservice architecture. By component, I mean a utility or business feature which can be managed or updated independently. It has a predefined boundary and it exposes an API by which other components can communicate with this service. The idea of microservices is breaking down a complete business functionality into several independent small features which will communicate with each other to produce the total business functionality. If any portion of the functionality changes in the future, we can update or remove that component and add a new component to the architecture. So, Microservice architecture produces a proper modular architecture with proper encapsulation and properly defined boundaries.
 4. Gateway Service: A microservice is a collection of independent services which collectively produces a business functionality. Every microservice publishes an API, generally a REST API, so as a client, it is cumbersome to manage so many endpoint URLs to communicate with. Also, think about another perspective: if some application wants to build an authentication framework or security checking, they have to implement across all services, so that would be repeating itself against DRY. If we have a Gateway service, which is internet facing, the client will call only one endpoint and it delegates the call to an actual microservice, and all the authentication or security checking will be done in the gateway service.
 
-# While implementing Docker,
-Software Requirements
+# Software Requirements for docker implementation
 OS: Ubuntu 20.04.2 LTS
 Java: openjdk 
 node
